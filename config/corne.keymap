@@ -36,10 +36,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp K_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &kp K_PLAY_PAUSE  &kp K_PREV      &kp C_NEXT       &kp DE_SINGLE_QUOTE   &kp DE_N7       &kp DE_N8  &kp DE_N9  &kp DE_N0    &kp DE_ESZETT
-&kp CAPS    &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_SHIFT    &kp LCTRL       &kp A            &kp DE_DOUBLE_QUOTES  &kp DE_N4       &kp DE_N5  &kp DE_N6  &kp DE_HASH  &kp DE_PLUS
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2      &bt BT_SEL 3    &bt BT_SEL 4     &kp DE_GRAVE          &kp DE_N1       &kp DE_N2  &kp DE_N3  &kp STAR     &kp DE_TILDE
-                                        &kp LSHFT         &studio_unlock  &kp BACKSPACE    &kp DELETE            &studio_unlock  &kp RCTRL
+&kp A         &kp DE_EURO           &kp DE_DOLLAR     &kp DE_LEFT_BRACE        &kp DE_RIGHT_BRACE        &kp DE_CARET     &kp KP_PLUS      &kp DE_N7  &kp DE_N8  &kp DE_N9  &kp DE_N0       &kp DE_ESZETT
+&kp CAPS      &kp DE_DOUBLE_QUOTES  &kp DE_SEMICOLON  &kp DE_LEFT_PARENTHESIS  &kp DE_RIGHT_PARENTHESIS  &kp DE_HASH      &kp KP_MINUS     &kp DE_N4  &kp DE_N5  &kp DE_N6  &kp KP_DIVIDE   &kp KP_EQUAL
+&kp LEFT_GUI  &kp DE_SINGLE_QUOTE   &kp DE_DOT        &kp DE_COMMA             &kp SEMICOLON             &kp DE_AT        &kp KP_MULTIPLY  &kp DE_N1  &kp DE_N2  &kp DE_N3  &kp DE_PERCENT  &kp RIGHT_ALT
+                                                      &kp LSHFT                &mo 3                     &kp BACKSPACE    &kp DELETE       &mo 3      &kp RCTRL
             >;
         };
 
@@ -51,20 +51,22 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB    &kp EXCL     &kp AT  &kp DE_LEFT_BRACE        &kp DE_RIGHT_BRACE        &kp PRCNT           &kp DE_AMPERSAND  &kp DE_LESS_THAN  &kp DE_GREATER_THAN  &kp DE_EQUAL   &kp A          &kp DE_QUESTION
-&kp LCTRL  &trans       &trans  &kp DE_LEFT_PARENTHESIS  &kp DE_RIGHT_PARENTHESIS  &kp DE_SLASH        &kp MINUS         &kp RCTRL         &kp RIGHT_SHIFT      &kp RIGHT_ALT  &kp RIGHT_GUI  &kp A
-&kp LSHFT  &kp DE_PIPE  &trans  &kp DE_LEFT_BRACKET      &kp DE_RIGHT_BRACKET      &kp DE_BACKSLASH    &kp DE_CARET      &kp PLUS          &kp LBRC             &kp DE_DOLLAR  &kp PIPE       &kp A
-                                &kp LEFT_SHIFT           &studio_unlock            &kp BACKSPACE       &kp DELETE        &studio_unlock    &kp RCTRL
+&kp A         &kp DE_GRAVE  &kp LESS_THAN    &kp GREATER_THAN     &kp DE_MINUS          &kp DE_PIPE       &kp HOME        &kp PAGE_DOWN  &kp PAGE_UP      &kp END        &kp INS  &kp DE_QUESTION
+&kp A         &kp DE_EXCL   &kp DE_QUESTION  &kp DE_SLASH         &kp DE_EQUAL          &kp DE_AMPS       &kp LEFT_ARROW  &kp DOWN       &kp UP           &kp RIGHT      &kp A    &kp A
+&kp LEFT_GUI  &kp DE_TILDE  &kp DE_PLUS      &kp DE_LEFT_BRACKET  &kp DE_RIGHT_BRACKET  &kp DE_PERCENT    &kp DE_CARET    &kp DE_SLASH   &kp DE_QUESTION  &kp DE_DOLLAR  &kp A    &kp RIGHT_ALT
+                                             &kp LEFT_SHIFT       &mo 3                 &kp BACKSPACE     &kp DELETE      &mo 3          &kp RCTRL
             >;
         };
 
-        layer_3 {
+        UTIL_LAYER {
             bindings = <
-&kp K_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &kp K_PLAY_PAUSE  &kp K_PREV      &kp C_NEXT       &kp HOME      &kp PAGE_DOWN   &kp PAGE_UP      &kp END        &kp DE_STAR  &kp DE_ESZETT
-&kp CAPS    &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_SHIFT    &kp LCTRL       &trans           &kp LEFT      &kp DOWN        &kp UP           &kp RIGHT      &kp DE_HASH  &kp DE_PLUS
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2      &bt BT_SEL 3    &bt BT_SEL 4     &kp DE_CARET  &kp DE_SLASH    &kp DE_QUESTION  &kp DE_DOLLAR  &trans       &kp DE_TILDE
-                                        &kp LSHFT         &studio_unlock  &kp BACKSPACE    &kp DELETE    &studio_unlock  &kp RCTRL
+&kp K_MUTE         &kp C_VOL_DN           &kp C_VOL_UP          &kp K_PLAY_PAUSE      &kp K_PREV      &kp C_NEXT        &kp PRINTSCREEN  &kp F7          &kp F8     &kp F9  &kp F12  &kp K_SLEEP
+&bt BT_CLR         &bt BT_SEL 0           &bt BT_SEL 1          &bt BT_SEL 3          &bt BT_SEL 4    &studio_unlock    &kp SCROLLLOCK   &kp F4          &kp F5     &kp F6  &kp F11  &kp C_MENU
+&kt LS(LA(LCTRL))  &kp C_BRIGHTNESS_AUTO  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &trans          &trans            &kp PAUSE_BREAK  &kp F1          &kp F2     &kp F3  &kp F10  &kp LS(LA(LC(RIGHT_GUI)))
+                                                                &kp LSHFT             &studio_unlock  &kp BACKSPACE     &kp DELETE       &studio_unlock  &kp RCTRL
             >;
+
+            label = "UTIL";
         };
     };
 };
