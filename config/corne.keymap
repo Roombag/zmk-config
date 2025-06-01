@@ -38,7 +38,7 @@
             bindings = <
 &kp ESCAPE    &kp DE_EURO           &kp DE_DOLLAR     &kp DE_LEFT_BRACE        &kp DE_RIGHT_BRACE        &kp DE_CARET     &kp KP_PLUS      &kp DE_N7  &kp DE_N8  &kp DE_N9  &kp DE_N0       &kp DE_ESZETT
 &kp TAB       &kp DE_DOUBLE_QUOTES  &kp DE_SEMICOLON  &kp DE_LEFT_PARENTHESIS  &kp DE_RIGHT_PARENTHESIS  &kp DE_HASH      &kp KP_MINUS     &kp DE_N4  &kp DE_N5  &kp DE_N6  &kp KP_DIVIDE   &kp KP_EQUAL
-&kp LEFT_GUI  &kp DE_SINGLE_QUOTE   &kp DE_DOT        &kp DE_COMMA             &kp SEMICOLON             &kp DE_AT        &kp KP_MULTIPLY  &kp DE_N1  &kp DE_N2  &kp DE_N3  &kp DE_PERCENT  &kp RIGHT_ALT
+&kp LEFT_GUI  &kp DE_SINGLE_QUOTE   &kp DE_DOT        &kp DE_COMMA             &kp DE_COLON              &kp DE_AT        &kp KP_MULTIPLY  &kp DE_N1  &kp DE_N2  &kp DE_N3  &kp DE_PERCENT  &kp RIGHT_ALT
                                                       &kp LSHFT                &mo 3                     &kp BACKSPACE    &kp DELETE       &mo 3      &kp RCTRL
             >;
         };
@@ -51,10 +51,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp ESCAPE    &kp DE_GRAVE  &kp LESS_THAN    &kp GREATER_THAN     &kp DE_MINUS          &kp DE_PIPE       &kp HOME        &kp PAGE_DOWN  &kp PAGE_UP      &kp END        &kp INS        &kp DE_QUESTION
-&kp TAB       &kp DE_EXCL   &kp DE_QUESTION  &kp DE_SLASH         &kp DE_EQUAL          &kp DE_AMPS       &kp LEFT_ARROW  &kp DOWN       &kp UP           &kp RIGHT      &kp DE_DEGREE  &kp CAPSLOCK
-&kp LEFT_GUI  &kp DE_TILDE  &kp DE_PLUS      &kp DE_LEFT_BRACKET  &kp DE_RIGHT_BRACKET  &kp DE_PERCENT    &kp DE_CARET    &kp DE_SLASH   &kp DE_QUESTION  &kp DE_DOLLAR  &kp DE_ACUTE   &kp RIGHT_ALT
-                                             &kp LEFT_SHIFT       &mo 3                 &kp BACKSPACE     &kp DELETE      &mo 3          &kp RCTRL
+&kp ESCAPE    &kp DE_GRAVE  &kp DE_LESS_THAN  &kp DE_GREATER_THAN  &kp DE_MINUS          &kp DE_PIPE       &kp HOME        &kp PAGE_DOWN  &kp PAGE_UP      &kp END        &kp INS        &kp DE_QUESTION
+&kp TAB       &kp DE_EXCL   &kp DE_QUESTION   &kp DE_SLASH         &kp DE_EQUAL          &kp DE_AMPS       &kp LEFT_ARROW  &kp DOWN       &kp UP           &kp RIGHT      &kp DE_DEGREE  &kp CAPSLOCK
+&kp LEFT_GUI  &kp DE_TILDE  &kp DE_PLUS       &kp DE_LEFT_BRACKET  &kp DE_RIGHT_BRACKET  &kp DE_PERCENT    &kp DE_CARET    &kp DE_SLASH   &kp DE_QUESTION  &kp DE_DOLLAR  &kp DE_ACUTE   &kp RIGHT_ALT
+                                              &kp LEFT_SHIFT       &mo 3                 &kp BACKSPACE     &kp DELETE      &mo 3          &kp RCTRL
             >;
         };
 
