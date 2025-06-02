@@ -26,6 +26,8 @@
 &kp LGUI  &kp DE_Y  &kp X  &kp C      &kp V  &kp B        &kp N     &kp M  &kp DE_COMMA  &kp DE_DOT  &kp DE_MINUS     &kp RALT
                            &kp LSHFT  &mo 1  &kp SPACE    &kp RET   &mo 2  &kp RCTRL
             >;
+
+            label = "BAS";
         };
 
         lower_layer {
