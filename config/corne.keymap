@@ -41,6 +41,8 @@
 &kp LEFT_GUI  &kp DE_SINGLE_QUOTE   &kp DE_DOT        &kp DE_COMMA             &kp DE_COLON              &kp DE_AT        &kp KP_MULTIPLY  &kp DE_N1  &kp DE_N2  &kp DE_N3  &kp DE_PERCENT  &kp RIGHT_ALT
                                                       &kp LSHFT                &mo 3                     &kp BACKSPACE    &kp DELETE       &mo 3      &kp RCTRL
             >;
+
+            label = "LOW";
         };
 
         raise_layer {
@@ -56,6 +58,8 @@
 &kp LEFT_GUI  &kp DE_TILDE  &kp DE_PLUS       &kp DE_LEFT_BRACKET  &kp DE_RIGHT_BRACKET  &kp DE_PERCENT    &kp DE_CARET    &kp DE_SLASH   &kp DE_QUESTION  &kp DE_DOLLAR  &kp DE_ACUTE   &kp RIGHT_ALT
                                               &kp LEFT_SHIFT       &mo 3                 &kp BACKSPACE     &kp DELETE      &mo 3          &kp RCTRL
             >;
+
+            label = "RAI";
         };
 
         UTIL_LAYER {
