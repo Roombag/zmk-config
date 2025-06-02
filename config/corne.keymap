@@ -60,10 +60,10 @@
 
         UTIL_LAYER {
             bindings = <
-&kp K_MUTE         &kp C_VOL_DN           &kp C_VOL_UP          &kp K_PLAY_PAUSE      &kp K_PREV      &kp C_NEXT        &kp PRINTSCREEN  &kp F7          &kp F8     &kp F9  &kp F12  &kp K_SLEEP
-&bt BT_CLR         &bt BT_SEL 0           &bt BT_SEL 1          &bt BT_SEL 3          &bt BT_SEL 4    &studio_unlock    &kp SCROLLLOCK   &kp F4          &kp F5     &kp F6  &kp F11  &kp C_MENU
-&kt LS(LA(LCTRL))  &kp C_BRIGHTNESS_AUTO  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp DE_MICRO    &trans            &kp PAUSE_BREAK  &kp F1          &kp F2     &kp F3  &kp F10  &kp LS(LA(LC(RIGHT_GUI)))
-                                                                &kp LSHFT             &studio_unlock  &kp BACKSPACE     &kp DELETE       &studio_unlock  &kp RCTRL
+&kp K_MUTE    &kp C_VOL_DN           &kp C_VOL_UP          &kp K_PLAY_PAUSE      &kp K_PREV      &kp C_NEXT        &kp PRINTSCREEN  &kp F7          &kp F8     &kp F9  &kp F12  &kp K_SLEEP
+&bt BT_CLR    &bt BT_SEL 0           &bt BT_SEL 1          &bt BT_SEL 3          &bt BT_SEL 4    &studio_unlock    &kp SCROLLLOCK   &kp F4          &kp F5     &kp F6  &kp F11  &kp C_MENU
+&kt LEFT_GUI  &kp C_BRIGHTNESS_AUTO  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp DE_MICRO    &trans            &kp PAUSE_BREAK  &kp F1          &kp F2     &kp F3  &kp F10  &kp RIGHT_ALT
+                                                           &kp LSHFT             &studio_unlock  &kp BACKSPACE     &kp DELETE       &studio_unlock  &kp RCTRL
             >;
 
             label = "UTIL";
