@@ -10,14 +10,7 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
-    combos {
-        compatible = "zmk,combos";
-
-        Windows {
-            bindings = <&kp LEFT_GUI>;
-            key-positions = <36 41>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     keymap {
         compatible = "zmk,keymap";
@@ -30,10 +23,10 @@
             //                    | SHFT | LWR | SPC |   | ENT | RSE  | CTRL |
 
             bindings = <
-&kp ESC    &kp DE_Q  &kp W  &kp DE_E   &kp R  &kp T        &kp DE_Z       &kp U  &kp I            &kp O       &kp P            &kp DE_U_UMLAUT
-&kp TAB    &kp A     &kp S  &kp D      &kp F  &kp G        &kp H          &kp J  &kp K            &kp L       &kp DE_O_UMLAUT  &kp DE_A_UMLAUT
-&kp LCTRL  &kp DE_Y  &kp X  &kp C      &kp V  &kp B        &kp N          &kp M  &kp DE_COMMA     &kp DE_DOT  &kp DE_MINUS     &kp LEFT_ALT
-                            &kp LSHFT  &mo 1  &kp SPACE    &kp BACKSPACE  &mo 2  &kp RIGHT_SHIFT
+&kp ESC    &kp DE_Q  &kp W  &kp DE_E   &kp R  &kp T        &kp DE_Z       &kp U  &kp I         &kp O       &kp P            &kp DE_U_UMLAUT
+&kp TAB    &kp A     &kp S  &kp D      &kp F  &kp G        &kp H          &kp J  &kp K         &kp L       &kp DE_O_UMLAUT  &kp DE_A_UMLAUT
+&kp LCTRL  &kp DE_Y  &kp X  &kp C      &kp V  &kp B        &kp N          &kp M  &kp DE_COMMA  &kp DE_DOT  &kp DE_MINUS     &kp LEFT_ALT
+                            &kp LSHFT  &mo 1  &kp SPACE    &kp BACKSPACE  &mo 2  &kp LEFT_GUI
             >;
 
             label = "ABC";
@@ -47,10 +40,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp DE_CARET  &kp DE_SINGLE_QUOTE  &kp DE_DOUBLE_QUOTES  &kp DE_LEFT_BRACE        &kp DE_RIGHT_BRACE        &kp DE_AT      &kp DE_ASTERISK  &kp DE_N7  &kp DE_N8        &kp DE_N9  &kp DE_PERCENT   &kp DE_ESZETT
-&kp DE_PIPE   &kp DE_EXCL          &kp DE_EQUAL          &kp DE_LEFT_PARENTHESIS  &kp DE_RIGHT_PARENTHESIS  &kp DE_HASH    &kp DE_SLASH     &kp DE_N4  &kp DE_N5        &kp DE_N6  &kp DE_QUESTION  &kp DE_BACKSLASH
-&kp LCTRL     &kp DE_LESS_THAN     &kp DE_GREATER_THAN   &kp DE_LEFT_BRACKET      &kp DE_RIGHT_BRACKET      &kp DE_AMPS    &kp DE_N0        &kp DE_N1  &kp DE_N2        &kp DE_N3  &kp DE_PLUS      &kp LEFT_ALT
-                                                         &kp LSHFT                &mo 3                     &kp ENTER      &kp DELETE       &mo 3      &kp RIGHT_SHIFT
+&kp DE_CARET  &kp DE_SINGLE_QUOTE  &kp DE_DOUBLE_QUOTES  &kp DE_LEFT_BRACE        &kp DE_RIGHT_BRACE        &kp DE_AT      &kp DE_ASTERISK  &kp DE_N7  &kp DE_N8     &kp DE_N9  &kp DE_PERCENT   &kp DE_ESZETT
+&kp DE_PIPE   &kp DE_EXCL          &kp DE_EQUAL          &kp DE_LEFT_PARENTHESIS  &kp DE_RIGHT_PARENTHESIS  &kp DE_HASH    &kp DE_SLASH     &kp DE_N4  &kp DE_N5     &kp DE_N6  &kp DE_QUESTION  &kp DE_BACKSLASH
+&kp LCTRL     &kp DE_LESS_THAN     &kp DE_GREATER_THAN   &kp DE_LEFT_BRACKET      &kp DE_RIGHT_BRACKET      &kp DE_AMPS    &kp DE_N0        &kp DE_N1  &kp DE_N2     &kp DE_N3  &kp DE_PLUS      &kp LEFT_ALT
+                                                         &kp LSHFT                &mo 3                     &kp ENTER      &kp DELETE       &mo 3      &kp LEFT_GUI
             >;
 
             label = "123";
@@ -59,19 +52,19 @@
         navigation {
             label = "NAV";
             bindings = <
-&kp DE_CARET  &kp DE_SINGLE_QUOTE  &kp DE_DOUBLE_QUOTES  &kp DE_LEFT_BRACE        &kp DE_RIGHT_BRACE        &kp DE_AT      &kp HOME        &kp PAGE_DOWN  &kp PG_UP        &kp END       &kp INS          &kp DE_ESZETT
-&kp DE_PIPE   &kp DE_EXCL          &kp DE_EQUAL          &kp DE_LEFT_PARENTHESIS  &kp DE_RIGHT_PARENTHESIS  &kp DE_HASH    &kp LEFT_ARROW  &kp DOWN       &kp UP           &kp RIGHT     &kp DE_QUESTION  &kp DE_TILDE
-&kp LCTRL     &kp DE_LESS_THAN     &kp DE_GREATER_THAN   &kp DE_LEFT_BRACKET      &kp DE_RIGHT_BRACKET      &kp DE_AMPS    &kp DE_EURO     &kp DE_DOLLAR  &kp DE_GRAVE     &kp DE_ACUTE  &kp DE_SECT      &kp LEFT_ALT
-                                                         &kp LSHFT                &mo 3                     &kp ENTER      &kp DELETE      &mo 3          &kp RIGHT_SHIFT
+&kp DE_CARET  &kp DE_SINGLE_QUOTE  &kp DE_DOUBLE_QUOTES  &kp DE_LEFT_BRACE        &kp DE_RIGHT_BRACE        &kp DE_AT      &kp HOME        &kp PAGE_DOWN  &kp PG_UP     &kp END       &kp INS          &kp DE_ESZETT
+&kp DE_PIPE   &kp DE_EXCL          &kp DE_EQUAL          &kp DE_LEFT_PARENTHESIS  &kp DE_RIGHT_PARENTHESIS  &kp DE_HASH    &kp LEFT_ARROW  &kp DOWN       &kp UP        &kp RIGHT     &kp DE_QUESTION  &kp DE_TILDE
+&kp LCTRL     &kp DE_LESS_THAN     &kp DE_GREATER_THAN   &kp DE_LEFT_BRACKET      &kp DE_RIGHT_BRACKET      &kp DE_AMPS    &kp DE_EURO     &kp DE_DOLLAR  &kp DE_GRAVE  &kp DE_ACUTE  &kp DE_SECT      &kp LEFT_ALT
+                                                         &kp LSHFT                &mo 3                     &kp ENTER      &kp DELETE      &mo 3          &kp LEFT_GUI
             >;
         };
 
         UTIL_LAYER {
             bindings = <
-&kp C_MUTE  &kp C_VOL_DN           &kp C_VOL_UP          &kp C_PLAY_PAUSE      &kp C_PREV      &kp C_NEXT       &kp PRINTSCREEN  &kp F7          &kp F8           &kp F9  &kp F12  &kp C_SLEEP
-&bt BT_CLR  &bt BT_SEL 0           &bt BT_SEL 1          &bt BT_SEL 3          &bt BT_SEL 4    &kp CAPS         &kp SCROLLLOCK   &kp F4          &kp F5           &kp F6  &kp F11  &kp K_CONTEXT_MENU
-&kt LCTRL   &kp C_BRIGHTNESS_AUTO  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp DE_MICRO    &kp RIGHT_ALT    &kp PAUSE_BREAK  &kp F1          &kp F2           &kp F3  &kp F10  &kp LEFT_ALT
-                                                         &kp LSHFT             &studio_unlock  &kp RET          &kp DELETE       &studio_unlock  &kp RIGHT_SHIFT
+&kp C_MUTE  &kp C_VOL_DN           &kp C_VOL_UP          &kp C_PLAY_PAUSE      &kp C_PREV      &kp C_NEXT       &kp PRINTSCREEN  &kp F7          &kp F8        &kp F9  &kp F12  &kp C_SLEEP
+&bt BT_CLR  &bt BT_SEL 0           &bt BT_SEL 1          &bt BT_SEL 3          &bt BT_SEL 4    &kp CAPS         &kp SCROLLLOCK   &kp F4          &kp F5        &kp F6  &kp F11  &kp K_CONTEXT_MENU
+&kt LCTRL   &kp C_BRIGHTNESS_AUTO  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp DE_MICRO    &kp RIGHT_ALT    &kp PAUSE_BREAK  &kp F1          &kp F2        &kp F3  &kp F10  &kp LEFT_ALT
+                                                         &kp LSHFT             &studio_unlock  &kp RET          &kp DELETE       &studio_unlock  &kp LEFT_GUI
             >;
 
             label = "UTIL";
