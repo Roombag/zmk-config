@@ -10,7 +10,29 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        home {
+            bindings = <&kp HOME>;
+            key-positions = <18 19>;
+        };
+
+        pgup {
+            bindings = <&kp PG_UP>;
+            key-positions = <7 8>;
+        };
+
+        pgdown {
+            bindings = <&kp PG_DN>;
+            key-positions = <31 32>;
+        };
+
+        end {
+            bindings = <&kp END>;
+            key-positions = <20 21>;
+        };
+    };
 
     keymap {
         compatible = "zmk,keymap";
@@ -40,10 +62,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp DE_CARET  &kp DE_SINGLE_QUOTE  &kp DE_DOUBLE_QUOTES  &kp DE_LEFT_BRACE        &kp DE_RIGHT_BRACE        &kp DE_AT      &kp DE_ASTERISK  &kp DE_N7  &kp DE_N8     &kp DE_N9  &kp DE_PERCENT   &kp DE_ESZETT
-&kp DE_PIPE   &kp DE_EXCL          &kp DE_EQUAL          &kp DE_LEFT_PARENTHESIS  &kp DE_RIGHT_PARENTHESIS  &kp DE_HASH    &kp DE_SLASH     &kp DE_N4  &kp DE_N5     &kp DE_N6  &kp DE_QUESTION  &kp DE_BACKSLASH
-&kp LCTRL     &kp DE_LESS_THAN     &kp DE_GREATER_THAN   &kp DE_LEFT_BRACKET      &kp DE_RIGHT_BRACKET      &kp DE_AMPS    &kp DE_N0        &kp DE_N1  &kp DE_N2     &kp DE_N3  &kp DE_PLUS      &kp LEFT_ALT
-                                                         &kp LSHFT                &mo 3                     &kp ENTER      &kp DELETE       &mo 3      &kp LEFT_GUI
+&kp DE_CARET  &kp DE_SINGLE_QUOTE  &kp DE_DOUBLE_QUOTES  &kp DE_LEFT_BRACE        &kp DE_RIGHT_BRACE        &kp DE_AT      &kp DE_PERCENT  &kp DE_N7  &kp DE_N8     &kp DE_N9  &kp DE_PLUS      &kp DE_ESZETT
+&kp DE_PIPE   &kp DE_EXCL          &kp DE_EQUAL          &kp DE_LEFT_PARENTHESIS  &kp DE_RIGHT_PARENTHESIS  &kp DE_HASH    &kp DE_N0       &kp DE_N4  &kp DE_N5     &kp DE_N6  &kp DE_QUESTION  &kp DE_TILDE
+&kp LCTRL     &kp DE_LESS_THAN     &kp DE_GREATER_THAN   &kp DE_LEFT_BRACKET      &kp DE_RIGHT_BRACKET      &kp DE_AMPS    &kp DE_EURO     &kp DE_N1  &kp DE_N2     &kp DE_N3  &kp DE_SECT      &kp LEFT_ALT
+                                                         &kp LSHFT                &mo 3                     &kp ENTER      &kp DELETE      &mo 3      &kp LEFT_GUI
             >;
 
             label = "123";
@@ -52,9 +74,9 @@
         navigation {
             label = "NAV";
             bindings = <
-&kp DE_CARET  &kp DE_SINGLE_QUOTE  &kp DE_DOUBLE_QUOTES  &kp DE_LEFT_BRACE        &kp DE_RIGHT_BRACE        &kp DE_AT      &kp HOME        &kp PAGE_DOWN  &kp PG_UP     &kp END       &kp INS          &kp DE_ESZETT
-&kp DE_PIPE   &kp DE_EXCL          &kp DE_EQUAL          &kp DE_LEFT_PARENTHESIS  &kp DE_RIGHT_PARENTHESIS  &kp DE_HASH    &kp LEFT_ARROW  &kp DOWN       &kp UP        &kp RIGHT     &kp DE_QUESTION  &kp DE_TILDE
-&kp LCTRL     &kp DE_LESS_THAN     &kp DE_GREATER_THAN   &kp DE_LEFT_BRACKET      &kp DE_RIGHT_BRACKET      &kp DE_AMPS    &kp DE_EURO     &kp DE_DOLLAR  &kp DE_GRAVE  &kp DE_ACUTE  &kp DE_SECT      &kp LEFT_ALT
+&kp DE_CARET  &kp DE_SINGLE_QUOTE  &kp DE_DOUBLE_QUOTES  &kp DE_LEFT_BRACE        &kp DE_RIGHT_BRACE        &kp DE_AT      &kp DE_PERCENT  &kp DE_SLASH   &kp DE_ASTERISK  &kp DE_BACKSLASH  &kp DE_PLUS      &kp DE_ESZETT
+&kp DE_PIPE   &kp DE_EXCL          &kp DE_EQUAL          &kp DE_LEFT_PARENTHESIS  &kp DE_RIGHT_PARENTHESIS  &kp DE_HASH    &kp LEFT_ARROW  &kp DOWN       &kp UP           &kp RIGHT         &kp DE_QUESTION  &kp DE_TILDE
+&kp LCTRL     &kp DE_LESS_THAN     &kp DE_GREATER_THAN   &kp DE_LEFT_BRACKET      &kp DE_RIGHT_BRACKET      &kp DE_AMPS    &kp DE_EURO     &kp DE_DOLLAR  &kp DE_GRAVE     &kp DE_ACUTE      &kp DE_SECT      &kp LEFT_ALT
                                                          &kp LSHFT                &mo 3                     &kp ENTER      &kp DELETE      &mo 3          &kp LEFT_GUI
             >;
         };
